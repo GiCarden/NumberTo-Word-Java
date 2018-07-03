@@ -29,7 +29,7 @@ class NumberToWord {
      */
     private static String convertToWord(int number) {
 
-        if (number < 0 || number > 99999) { return "Valid Rang is from 0 to 99999"; }
+        if (number < 0 || number > 99999) { return "Valid Range is from 0 to 99999, try again:"; }
 
         StringBuilder word = new StringBuilder();
 
@@ -108,7 +108,7 @@ class NumberToWord {
 
                 if (temp < 0 || temp > 99999) {
 
-                    System.out.print("Valid Rang is from 0 to 99999, try again: ");
+                    System.out.print("Valid Range is from 0 to 99999, try again: ");
                     isInt = false;
                 }
             } catch (NumberFormatException | NullPointerException e) {
